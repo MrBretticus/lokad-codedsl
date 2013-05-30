@@ -110,8 +110,8 @@ public sealed class {0}";
                 if ((entity.Name ?? "default") == "default")
                     continue;
 
-                GenerateEntityInterface(entity, writer, "?", "public interface I{0}ApplicationService");
-                GenerateEntityInterface(entity, writer, "!", "public interface I{0}State");
+                GenerateEntityInterface(entity, writer, "?", "public partial interface I{0}ApplicationService");
+                GenerateEntityInterface(entity, writer, "!", "public partial interface I{0}State");
             }
         }
 
